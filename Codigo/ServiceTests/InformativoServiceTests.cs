@@ -80,7 +80,7 @@ namespace ServiceTests
             _informativoService.Create(newInformativo);
 
             // Assert
-            var informativo = _informativoService.Get(1, 3).Result;
+            var informativo = _informativoService.Get(1).Result;
             Assert.AreEqual(1, informativo.IdGrupoMusical);
             Assert.AreEqual(3, informativo.IdPessoa);
             Assert.AreEqual("Bom dia! Hoje acontecerá nossa apresentação, lembrem-se o horário combinado.", informativo.Mensagem);            
@@ -124,7 +124,7 @@ namespace ServiceTests
         [TestMethod]
         public void GetTest()
         {
-            var informativoService = _informativoService.Get(1, 2).Result;
+            var informativoService = _informativoService.Get(1).Result;
 
             Assert.IsNotNull(informativoService, "Retornou Nulo.");
 
