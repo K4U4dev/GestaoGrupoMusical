@@ -29,7 +29,7 @@ namespace Service.Tests
                 {
                     Id = 1,
                     Patrimonio = "1",
-                    DataAquisicao = DateTime.Parse("24/02/2013"),
+                    DataAquisicao = DateTime.ParseExact("24/02/2013", "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture),
                     Status = "DISPONIVEL",
                     IdTipoInstrumento = 0 ,
                     IdGrupoMusical = 0
@@ -38,7 +38,7 @@ namespace Service.Tests
                 {
                     Id = 2,
                     Patrimonio = "2",
-                    DataAquisicao = DateTime.Parse("24/02/2013"),
+                    DataAquisicao = DateTime.ParseExact("24/02/2013", "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture),
                     Status = "EMPRESTADO",
                     IdTipoInstrumento = 1 ,
                     IdGrupoMusical = 0
@@ -47,7 +47,7 @@ namespace Service.Tests
                 {
                     Id = 3,
                     Patrimonio = "3",
-                    DataAquisicao = DateTime.Parse("24/02/2013"),
+                    DataAquisicao = DateTime.ParseExact("24/02/2013", "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture),
                     Status = "DANIFICADO",
                     IdTipoInstrumento = 2 ,
                     IdGrupoMusical = 0
